@@ -1,0 +1,88 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+ @font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-wght.woff2') format('woff2');
+  
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('/fonts/GeistMono-wght.woff2') format('woff2');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+body {
+  font-family: 'Geist', sans-serif;
+}
+pre, code {
+  font-family: 'GeistMono', monospace !important;
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #000;
+  --ifm-color-primary-dark: #000;
+  --ifm-color-primary-darker: #000;
+  --ifm-color-primary-darkest: #000;
+  --ifm-color-primary-light: #222;
+  --ifm-color-primary-lighter: #333;
+  --ifm-color-primary-lightest: #444;
+  --ifm-code-font-size: 95%;
+  --ifm-menu-color: #000;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #fff;
+  --ifm-color-primary-dark: #eee;
+  --ifm-color-primary-darker: #fff;
+  --ifm-color-primary-darkest: fff;
+  --ifm-color-primary-light: #bbb;
+  --ifm-color-primary-lighter: #ddd;
+  --ifm-color-primary-lightest: #fff;
+  --ifm-navbar-background-color: #000;
+  --ifm-menu-color-background-active: rgba(255, 255, 255, 0.15);
+  --ifm-menu-color: #fff;
+  --ifm-font-color-base: #fff;
+  --ifm-background-color: #000 !important;
+  --ifm-footer-background-color: #000 !important;
+  --ifm-navbar-shadow: 0 .5px 2px 0 #ffffffa1;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.footer--dark {
+  background-color: #000;
+  box-shadow: 0 .5px 2px 0 #ffffffa1;
+}
+
+button.close {
+    svg {
+      color: #fff;
+    }
+}
+
+.menu__list-item-collapsible {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.menu__list-item-collapsible:hover {
+  background: none;
+}
+
+.menu__list {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
