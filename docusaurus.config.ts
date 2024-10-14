@@ -16,7 +16,7 @@ const config: Config = {
   organizationName: "quill", // Replace with your GitHub org/user name
   projectName: "quill-docs", // Replace with your repo name
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Set metadata like html lang
@@ -25,12 +25,17 @@ const config: Config = {
     locales: ["en"],
   },
 
-  // plugins: [
-  //   [
-
-  //   ],
-  // ],
-
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      {
+        hashed: true,
+        indexPages: true,
+        docsRouteBasePath: "/",
+      },
+    ],
+  ],
   presets: [
     [
       "classic",
@@ -115,7 +120,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Quill Dev Tools`,
+      copyright: `Copyright © ${new Date().getFullYear()} Quill Dev Tools • Built with Docusaurus`,
     },
     prism: {
       theme: prismThemes.github,

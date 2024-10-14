@@ -38,9 +38,10 @@ jobs:
         run: ./gradlew assembleDebug
 
       - name: Upload APK to Quill
-        uses: quill-action/quill-upload-apk@v1
+        uses: quilldevtools/preview@v2
         with:
           api_key: ${{ secrets.QUILL_API_KEY }}
+          pkg-name: "com.example"
           apk_path: "./app/build/outputs/apk/debug/app-debug.apk"
 ```
 
