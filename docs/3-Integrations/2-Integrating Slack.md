@@ -2,13 +2,11 @@
 slug: /integrating-slack
 ---
 
-Quill allows seamless integration with tools your team already uses:
+Quill allows seamless integration with tools your team already uses
 
-- **Slack:**
+To integrate Slack:
 
-  - In the _Settings_ tab, navigate to **Slack Integration**.
-  - Follow the OAuth flow to connect your Slack workspace.
-  - You’ll be able to receive notifications for PR updates directly in Slack.
-
-- **JIRA:** (Coming Soon)
-  - Quill will soon allow you to create and track issues in JIRA without leaving the platform.
+1. Go to the _Settings_ tab
+2. Locate the "Slack Integration" section.
+3. Click "Link Slack" and Follow the OAuth flow to connect your Slack workspace.
+4. You’ll be able to receive notifications for PR updates directly in Slack.

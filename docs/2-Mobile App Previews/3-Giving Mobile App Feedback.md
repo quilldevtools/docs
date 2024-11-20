@@ -2,11 +2,11 @@
 slug: /giving-feedback
 ---
 
-Once an app is loaded onto the emulator:
+To give feedback on a preview:
 
-1. **Capture & Annotate Screenshots**  
-   Use the annotation tool to highlight issues in the app interface.
-2. **Post Comments**  
-   Leave comments directly on the PR using the built-in feedback tool.
-3. **Track Issues (Coming soon)**  
-   Keep track of all feedback and issues in the PR. Quill will soon allow direct integration with issue management tools like JIRA.
+1. Select a preview from the list of previews
+2. Wait for your app to be installed on the Quill emulator
+3. Click on the "Take screenshot" button
+4. Use the annotation tool to highlight issues in the screenshot.
+5. Click "Add to Comment". This will add a link to the comment on the comment text area
+6. Add your message above the image link and click the "Comment" button
