@@ -99,7 +99,7 @@ jobs:
         run: ./gradlew assembleDebug
 
       # Create a preview on Quill
-      - uses: quilldevtools/quill-flutter-action@main
+      - uses: quilldevtools/preview@main
         with:
           app-path: "app/build/outputs/apk/debug/app-debug.apk"
           pkg-name: "com.example" # REPLACE THIS WITH THE NAME OF YOUR APP PACKAGE
@@ -151,7 +151,7 @@ jobs:
       - run: flutter build apk --release
 
       # Create a preview on Quill
-      - uses: quilldevtools/quill-flutter-action@main
+      - uses: quilldevtools/preview@main
         with:
           app-path: "build/app/outputs/flutter-apk/app-release.apk"
           pkg-name: "com.example" # REPLACE THIS WITH THE NAME OF YOUR APP PACKAGE
@@ -232,7 +232,7 @@ jobs:
         run: cd android && ./gradlew assembleRelease
 
       # Create a preview on Quill
-      - uses: quilldevtools/quill-flutter-action@main
+      - uses: quilldevtools/preview@main
         with:
           app-path: "android/app/build/outputs/apk/release/app-release.apk"
           pkg-name: "com.example" # REPLACE THIS WITH THE NAME OF YOUR APP PACKAGE
