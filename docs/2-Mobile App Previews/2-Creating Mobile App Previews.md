@@ -50,6 +50,7 @@ on:
 permissions:
   pull-requests: write # Needed to add comments to the Pull Request that triggered the build
   actions: write # Needed to cancel a workflow when it no longer needs to run
+  contents: read # So GitHub can checkout the code and build the app
 
 on:
   pull_request:
@@ -120,6 +121,7 @@ on:
 permissions:
   pull-requests: write # Needed to add comments to the Pull Request that triggered the build
   actions: write # Needed to cancel a workflow when it no longer needs to run
+  contents: read # So GitHub can checkout the code and build the app
 
 on:
   pull_request:
@@ -171,6 +173,7 @@ on:
 permissions:
   pull-requests: write # Needed to add comments to the Pull Request that triggered the build
   actions: write # Needed to cancel a workflow when it no longer needs to run
+  contents: read # So GitHub can checkout the code and build the app
 
 on:
   pull_request:
