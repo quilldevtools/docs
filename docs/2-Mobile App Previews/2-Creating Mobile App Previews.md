@@ -52,11 +52,6 @@ permissions:
   actions: write # Needed to cancel a workflow when it no longer needs to run
   contents: read # So GitHub can checkout the code and build the app
 
-on:
-  pull_request:
-    branches:
-      - main
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -73,8 +68,8 @@ jobs:
       - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
-          distribution: 'adopt'
+          java-version: "11"
+          distribution: "adopt"
 
       # Cache Gradle dependencies
       - name: Cache Gradle files
@@ -123,11 +118,6 @@ permissions:
   actions: write # Needed to cancel a workflow when it no longer needs to run
   contents: read # Needed so that GitHub can pull the code and build the app
 
-on:
-  pull_request:
-    branches:
-      - main
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -175,11 +165,6 @@ permissions:
   actions: write # Needed to cancel a workflow when it no longer needs to run
   contents: read # So GitHub can checkout the code and build the app
 
-on:
-  pull_request:
-    branches:
-      - main
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -196,7 +181,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       # Cache Node.js dependencies
       - name: Cache node_modules
@@ -217,8 +202,8 @@ jobs:
       - name: Set up JDK 11
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
-          distribution: 'adopt'
+          java-version: "11"
+          distribution: "adopt"
 
       # Set up Android SDK
       - name: Set up Android SDK
