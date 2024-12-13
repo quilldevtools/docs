@@ -42,10 +42,17 @@ name: Build Android Application
 # Controls when the workflow will run. It is recommended to run it when a pull request is
 # opened and when the pull request code is updated (synchronized)
 on:
+  # This will enable the creation of no-code UI tests for your mobile app.
+  # Tests are created against the latest app on the main branch
+  push:
+    branches:
+      - "main" # Change to the name of your main branch as needed
+
+  # This gives you mobile app previews for your pending Pull Request changes
   pull_request:
     types: [opened, synchronize]
     branches:
-      - "main"
+      - "main" # Change to the name of your main branch as needed
 
 permissions:
   pull-requests: write # Needed to add comments to the Pull Request that triggered the build
@@ -108,6 +115,13 @@ name: Build Android Application
 # Controls when the workflow will run. It is recommended to run it when a pull request is
 # opened and when the pull request code is updated (synchronized)
 on:
+  # This will enable the creation of no-code UI tests for your mobile app.
+  # Tests are created against the latest app on the main branch
+  push:
+    branches:
+      - "main" # Change to the name of your main branch as needed
+
+  # This gives you mobile app previews for your pending Pull Request changes
   pull_request:
     types: [opened, synchronize]
     branches:
@@ -155,6 +169,13 @@ name: Build Android Application
 # Controls when the workflow will run. It is recommended to run it when a pull request is
 # opened and when the pull request code is updated (synchronized)
 on:
+  # This will enable the creation of no-code UI tests for your mobile app.
+  # Tests are created against the latest app on the main branch
+  push:
+    branches:
+      - "main" # Change to the name of your main branch as needed
+
+  # This gives you mobile app previews for your pending Pull Request changes
   pull_request:
     types: [opened, synchronize]
     branches:
