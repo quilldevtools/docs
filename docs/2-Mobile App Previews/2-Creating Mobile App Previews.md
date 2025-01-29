@@ -72,10 +72,10 @@ jobs:
         uses: actions/checkout@v3
 
       # Set up Java. Change this according to the JDK version needed
-      - name: Set up JDK 11
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          java-version: "11"
+          java-version: "17"
           distribution: "adopt"
 
       # Cache Gradle dependencies
@@ -141,9 +141,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-java@v1
+      # Set up Java. Change this according to the JDK version needed
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
         with:
-          java-version: "11.0"
+          java-version: "17"
+          distribution: "adopt"
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: "3.19.2"
@@ -219,11 +222,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      # Set up Java
-      - name: Set up JDK 11
+      # Set up Java. Change this according to the JDK version needed
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          java-version: "11"
+          java-version: "17"
           distribution: "adopt"
 
       # Set up Android SDK
